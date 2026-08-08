@@ -1,0 +1,33 @@
+{
+  "copyrightText": "© 2026 Ohmtech Developers Inc. All rights reserved.",
+  "columns": [
+    {
+      "title": "Solutions",
+      "links": [
+        { "label": "AI Automation", "path": "/services/ai-automation" },
+        { "label": "Enterprise Platforms", "path": "/services/enterprise-software" },
+        { "label": "Cloud Infrastructure", "path": "/services/cloud-devops" },
+        { "label": "Cybersecurity", "path": "/services/cybersecurity" }
+      ]
+    },
+    {
+      "title": "Company",
+      "links": [
+        { "label": "About Us", "path": "/about" },
+        { "label": "Case Studies", "path": "/case-studies" },
+        { "label": "Portfolio", "path": "/portfolio" },
+        { "label": "Insights & Blog", "path": "/blogs" },
+        { "label": "Careers", "path": "/careers" }
+      ]
+    },
+    {
+      "title": "Legal",
+      "links": [
+        { "label": "Privacy Policy", "path": "/legal/privacy" },
+        { "label": "Terms of Service", "path": "/legal/terms" },
+        { "label": "Cookie Settings", "path": "/legal/cookies" },
+        { "label": "Security Policy", "path": "/legal/security" }
+      ]
+    }
+  ]
+}

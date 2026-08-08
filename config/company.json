@@ -1,0 +1,27 @@
+{
+  "companyName": "Ohmtech Developers",
+  "tagline": "Architecting Scalable Enterprise Systems & AI Automation",
+  "description": "We engineer high-performance custom enterprise software, cloud platforms, and intelligent AI automation for industry leaders.",
+  "email": "sanjayaswal2003@gmail.com",
+  "salesEmail": "sanjayaswal2003@gmail.com",
+  "phone": "+918305712353",
+  "whatsapp": "+918305712353",
+  "address": "750 Enterprise Way, Suite 400, Innovation District",
+  "country": "India",
+  "website": "https://ohmtechdevelopers.com",
+  "logo": "/brand/logo.svg",
+  "logoIcon": "/brand/logo-icon.svg",
+  "social": {
+    "linkedin": "https://linkedin.com/company/ohmtech-developers",
+    "github": "https://github.com/ohmtech-developers",
+    "twitter": "https://twitter.com/ohmtech_dev",
+    "youtube": "https://youtube.com/@ohmtechdevelopers",
+    "instagram": "https://instagram.com/ohmtechdevelopers"
+  },
+  "metrics": {
+    "projectsCompleted": "250+",
+    "clientSatisfaction": "99.4%",
+    "uptimeGuarantee": "99.99%",
+    "globalClients": "35+"
+  }
+}

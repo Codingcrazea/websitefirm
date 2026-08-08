@@ -1,0 +1,10 @@
+{
+  "siteName": "Ohmtech Developers",
+  "domain": "ohmtechdevelopers.com",
+  "defaultLocale": "en",
+  "theme": {
+    "defaultMode": "dark",
+    "primaryColor": "#dfb76c",
+    "accentColor": "#0b0e14"
+  }
+}

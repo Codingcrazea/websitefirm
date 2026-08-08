@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <rect width="800" height="450" fill="#0f172a"/>
+  <!-- Inventory Alerts & Stock Velocity Table -->
+  <rect x="20" y="20" width="760" height="410" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="40" y="55" font-family="system-ui" font-size="16" font-weight="bold" fill="#ffffff">Low Stock Alerts &amp; Velocity Tracker</text>
+  
+  <rect x="40" y="80" width="700" height="320" rx="8" fill="#0f172a" stroke="#334155"/>
+  
+  <!-- Table Header -->
+  <rect x="50" y="95" width="680" height="32" rx="4" fill="#1e293b"/>
+  <text x="70" y="116" font-family="system-ui" font-size="11" font-weight="bold" fill="#94a3b8">PRODUCT SKU</text>
+  <text x="220" y="116" font-family="system-ui" font-size="11" font-weight="bold" fill="#94a3b8">PRODUCT NAME</text>
+  <text x="420" y="116" font-family="system-ui" font-size="11" font-weight="bold" fill="#94a3b8">STOCK QTY</text>
+  <text x="520" y="116" font-family="system-ui" font-size="11" font-weight="bold" fill="#94a3b8">THRESHOLD</text>
+  <text x="630" y="116" font-family="system-ui" font-size="11" font-weight="bold" fill="#94a3b8">EST. REMAINING</text>
+
+  <!-- Row 1 -->
+  <rect x="50" y="135" width="680" height="40" rx="4" fill="#ef4444" fill-opacity="0.1" stroke="#ef4444" stroke-opacity="0.3"/>
+  <text x="70" y="160" font-family="monospace" font-size="11" fill="#f87171">SKU-TEE-BLK-M</text>
+  <text x="220" y="160" font-family="system-ui" font-size="11" fill="#ffffff">Organic Cotton Tee (Black / M)</text>
+  <text x="440" y="160" font-family="system-ui" font-size="12" font-weight="bold" fill="#ef4444">2</text>
+  <text x="540" y="160" font-family="system-ui" font-size="12" fill="#94a3b8">15</text>
+  <rect x="630" y="145" width="85" height="22" rx="11" fill="#ef4444"/>
+  <text x="672" y="160" font-family="system-ui" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">&lt; 2 Days</text>
+
+  <!-- Row 2 -->
+  <rect x="50" y="185" width="680" height="40" rx="4" fill="#f59e0b" fill-opacity="0.1" stroke="#f59e0b" stroke-opacity="0.3"/>
+  <text x="70" y="210" font-family="monospace" font-size="11" fill="#fbbf24">SKU-HD-GRY-L</text>
+  <text x="220" y="210" font-family="system-ui" font-size="11" fill="#ffffff">Heavyweight Hoodie (Grey / L)</text>
+  <text x="440" y="210" font-family="system-ui" font-size="12" font-weight="bold" fill="#f59e0b">5</text>
+  <text x="540" y="210" font-family="system-ui" font-size="12" fill="#94a3b8">10</text>
+  <rect x="630" y="195" width="85" height="22" rx="11" fill="#f59e0b"/>
+  <text x="672" y="210" font-family="system-ui" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">~ 4 Days</text>
+</svg>

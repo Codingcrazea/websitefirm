@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <rect width="800" height="450" fill="#0f172a"/>
+  <!-- AI Generator Screen & 3 Variations -->
+  <rect x="20" y="20" width="760" height="410" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="40" y="55" font-family="system-ui" font-size="16" font-weight="bold" fill="#ffffff">✨ AI Multi-Variation Generation Engine</text>
+  
+  <rect x="40" y="80" width="700" height="320" rx="8" fill="#0f172a" stroke="#334155"/>
+  <rect x="60" y="100" width="200" height="280" rx="8" fill="#1e293b" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="75" y="130" font-family="system-ui" font-size="12" font-weight="bold" fill="#c084fc">LinkedIn Preview</text>
+  <text x="75" y="155" font-family="system-ui" font-size="10" fill="#cbd5e1">"Transform your CRM data into actionable sales pipelines..."</text>
+
+  <rect x="290" y="100" width="200" height="280" rx="8" fill="#1e293b" stroke="#334155"/>
+  <text x="305" y="130" font-family="system-ui" font-size="12" font-weight="bold" fill="#38bdf8">Instagram Preview</text>
+  <rect x="305" y="145" width="170" height="100" rx="4" fill="#334155"/>
+  <text x="305" y="260" font-family="system-ui" font-size="10" fill="#cbd5e1">"Work smarter, not harder. #AI #CRM"</text>
+
+  <rect x="520" y="100" width="200" height="280" rx="8" fill="#1e293b" stroke="#334155"/>
+  <text x="535" y="130" font-family="system-ui" font-size="12" font-weight="bold" fill="#ec4899">Email Campaign</text>
+  <text x="535" y="155" font-family="system-ui" font-size="10" fill="#cbd5e1">Subject: 3x your deal velocity</text>
+</svg>

@@ -1,0 +1,18 @@
+{
+  "defaultTitle": "Ohmtech Developers | Enterprise Software & AI Solutions",
+  "titleTemplate": "%s | Ohmtech Developers",
+  "defaultDescription": "Ohmtech Developers builds custom enterprise software, cloud platforms, and intelligent AI automation systems for global industry leaders.",
+  "defaultOgImage": "/brand/og-image.png",
+  "siteUrl": "https://ohmtechdevelopers.com",
+  "twitterHandle": "@ohmtech_dev",
+  "organizationSchema": {
+    "name": "Ohmtech Developers",
+    "url": "https://ohmtechdevelopers.com",
+    "logo": "https://ohmtechdevelopers.com/brand/logo.png",
+    "sameAs": [
+      "https://linkedin.com/company/ohmtech-developers",
+      "https://github.com/ohmtech-developers",
+      "https://twitter.com/ohmtech_dev"
+    ]
+  }
+}

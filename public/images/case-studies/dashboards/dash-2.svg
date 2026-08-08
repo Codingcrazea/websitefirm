@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0F19"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366F1"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1000" height="600" rx="16" fill="url(#bgGrad)"/>
+  
+  <!-- Title -->
+  <text x="40" y="50" font-family="system-ui, sans-serif" font-weight="bold" font-size="22" fill="#F3F4F6">Kanban Deal Pipeline</text>
+  <text x="40" y="75" font-family="system-ui, sans-serif" font-size="14" fill="#9CA3AF">Drag-and-drop stages, probability estimations, and forecasted revenue value streams.</text>
+  
+  <!-- Kanban Board Layout -->
+  <!-- Column 1: Lead In -->
+  <g transform="translate(40, 110)">
+    <rect width="168" height="440" rx="10" fill="#1F2937" fill-opacity="0.3" stroke="#374151" stroke-opacity="0.5"/>
+    <text x="12" y="24" font-family="system-ui, sans-serif" font-weight="bold" font-size="13" fill="#E5E7EB">LEAD IN</text>
+    <rect x="80" y="12" width="20" height="16" rx="8" fill="#374151"/>
+    <text x="90" y="24" font-family="system-ui, sans-serif" font-size="10" font-weight="bold" fill="#9CA3AF" text-anchor="middle">2</text>
+    <text x="156" y="24" font-family="system-ui, sans-serif" font-size="13" fill="#9CA3AF" text-anchor="end">$45K</text>
+    <line x1="12" y1="36" x2="156" y2="36" stroke="#374151" stroke-opacity="0.5"/>
+    
+    <!-- Card 1 -->
+    <g transform="translate(8, 48)">
+      <rect width="152" height="100" rx="8" fill="#1F2937" stroke="#374151"/>
+      <text x="12" y="22" font-family="system-ui, sans-serif" font-weight="bold" font-size="12" fill="#FFF">Acme Corp Ltd</text>
+      <text x="12" y="38" font-family="system-ui, sans-serif" font-size="10" fill="#9CA3AF">CRM Implementation</text>
+      <text x="12" y="62" font-family="system-ui, sans-serif" font-weight="bold" font-size="13" fill="#8B5CF6">$30,000</text>
+      <circle cx="132" cy="78" r="10" fill="#6366F1"/>
+      <text x="132" y="81" font-family="system-ui, sans-serif" font-size="9" fill="#FFF" text-anchor="middle">JD</text>
+      <rect x="12" y="72" width="45" height="14" rx="4" fill="#3B82F6" fill-opacity="0.2"/>
+      <text x="34" y="82" font-family="system-ui, sans-serif" font-size="8" font-weight="bold" fill="#3B82F6" text-anchor="middle">Cold</text>
+    </g>
+    
+    <!-- Card 2 -->
+    <g transform="translate(8, 156)">
+      <rect width="152" height="100" rx="8" fill="#1F2937" stroke="#374151"/>
+      <text x="12" y="22" font-family="system-ui, sans-serif" font-weight="bold" font-size="12" fill="#FFF">Tesla Motors</text>
+      <text x="12" y="38" font-family="system-ui, sans-serif" font-size="10" fill="#9CA3AF">AI Fleet Analytics</text>
+      <text x="12" y="62" font-family="system-ui, sans-serif" font-weight="bold" font-size="13" fill="#8B5CF6">$15,000</text>
+      <circle cx="132" cy="78" r="10" fill="#10B981"/>
+      <text x="132" y="81" font-family="system-ui, sans-serif" font-size="9" fill="#FFF" text-anchor="middle">EM</text>
+      <rect x="12" y="72" width="45" height="14" rx="4" fill="#3B82F6" fill-opacity="0.2"/>
+      <text x="34" y="82" font-family="system-ui, sans-serif" font-size="8" font-weight="bold" fill="#3B82F6" text-anchor="middle">Cold</text>
+    </g>
+  </g>
+  
+  <!-- Column 2: Contacted -->
+  <g transform="translate(224, 110)">
+    <rect width="168" height="440" rx="10" fill="#1F2937" fill-opacity="0.3" stroke="#374151" stroke-opacity="0.5"/>
+    <text x="12" y="24" font-family="system-ui, sans-serif" font-weight="bold" font-size="13" fill="#E5E7EB">CONTACTED</text>
+    <rect x="94" y="12" width="20" height="16" rx="8" fill="#374151"/>
+    <text x="104" y="24" font-family="system-ui, sans-serif" font-size="10" font-weight="bold" fill="#9CA3AF" text-anchor="middle">1</text>
+    <text x="156" y="24" font-family="system-ui, sans-serif" font-size="13" fill="#9CA3AF" text-anchor="end">$85K</text>
+    <line x1="12" y1="36" x2="156" y2="36" stroke="#374151" stroke-opacity="0.5"/>
+    
+    <!-- Card 1 -->
+    <g transform="translate(8, 48)">
+      <rect width="152" height="100" rx="8" fill="#1F2937" stroke="#374151"/>
+      <text x="12" y="22" font-family="system-ui, sans-serif" font-weight="bold" font-size="12" fill="#FFF">Microsoft Inc</text>
+      <text x="12" y="38" font-family="system-ui, sans-serif" font-size="10" fill="#9CA3AF">Enterprise SaaS Integration</text>
+      <text x="12" y="62" font-family="system-ui, sans-serif" font-weight="bold" font-size="13" fill="#8B5CF6">$85,000</text>
+      <circle cx="132" cy="78" r="10" fill="#F59E0B"/>
+      <text x="132" y="81" font-family="system-ui, sans-serif" font-size="9" fill="#FFF" text-anchor="middle">SN</text>
+      <rect x="12" y="72" width="45" height="14" rx="4" fill="#F59E0B" fill-opacity="0.2"/>
+      <text x="34" y="82" font-family="system-ui, sans-serif" font-size="8" font-weight="bold" fill="#F59E0B" text-anchor="middle">Warm</text>
+    </g>
+  </g>
+  
+  <!-- Column 3: Proposal Sent -->
+  <g transform="translate(408, 110)">
+    <rect width="168" height="440" rx="10" fill="#1F2937" fill-opacity="0.3" stroke="#374151" stroke-opacity="0.5"/>
+    <text x="12" y="24" font-family="system-ui, sans-serif" font-weight="bold" font-size="13" fill="#E5E7EB">PROPOSAL</text>
+    <rect x="80" y="12" width="20" height="16" rx="8" fill="#374151"/>
+    <text x="90" y="24" font-family="system-ui, sans-serif" font-size="10" font-weight="bold" fill="#9CA3AF" text-anchor="middle">1</text>
+    <text x="156" y="24" font-family="system-ui, sans-serif" font-size="13" fill="#9CA3AF" text-anchor="end">$120K</text>
+    <line x1="12" y1="36" x2="156" y2="36" stroke="#374151" stroke-opacity="0.5"/>
+    
+    <!-- Card 1 -->
+    <g transform="translate(8, 48)">
+      <rect width="152" height="100" rx="8" fill="#1F2937" stroke="#374151"/>
+      <text x="12" y="22" font-family="system-ui, sans-serif" font-weight="bold" font-size="12" fill="#FFF">Apple Corp</text>
+      <text x="12" y="38" font-family="system-ui, sans-serif" font-size="10" fill="#9CA3AF">AI-CRM Setup Pilot</text>
+      <text x="12" y="62" font-family="system-ui, sans-serif" font-weight="bold" font-size="13" fill="#8B5CF6">$120,000</text>
+      <circle cx="132" cy="78" r="10" fill="#3B82F6"/>
+      <text x="132" y="81" font-family="system-ui, sans-serif" font-size="9" fill="#FFF" text-anchor="middle">TC</text>
+      <rect x="12" y="72" width="45" height="14" rx="4" fill="#EF4444" fill-opacity="0.2"/>
+      <text x="34" y="82" font-family="system-ui, sans-serif" font-size="8" font-weight="bold" fill="#EF4444" text-anchor="middle">Hot</text>
+    </g>
+  </g>
+  
+  <!-- Column 4: Negotiation -->
+  <g transform="translate(592, 110)">
+    <rect width="168" height="440" rx="10" fill="#1F2937" fill-opacity="0.3" stroke="#374151" stroke-opacity="0.5"/>
+    <text x="12" y="24" font-family="system-ui, sans-serif" font-weight="bold" font-size="13" fill="#E5E7EB">NEGOTIATION</text>
+    <rect x="100" y="12" width="20" height="16" rx="8" fill="#374151"/>
+    <text x="110" y="24" font-family="system-ui, sans-serif" font-size="10" font-weight="bold" fill="#9CA3AF" text-anchor="middle">1</text>
+    <text x="156" y="24" font-family="system-ui, sans-serif" font-size="13" fill="#9CA3AF" text-anchor="end">$200K</text>
+    <line x1="12" y1="36" x2="156" y2="36" stroke="#374151" stroke-opacity="0.5"/>
+    
+    <!-- Card 1 -->
+    <g transform="translate(8, 48)">
+      <rect width="152" height="100" rx="8" fill="#1F2937" stroke="#6366F1" stroke-width="1.5" filter="drop-shadow(0px 0px 4px rgba(99,102,241,0.3))"/>
+      <text x="12" y="22" font-family="system-ui, sans-serif" font-weight="bold" font-size="12" fill="#FFF">Salesforce Partner</text>
+      <text x="12" y="38" font-family="system-ui, sans-serif" font-size="10" fill="#9CA3AF">Custom Engine Migration</text>
+      <text x="12" y="62" font-family="system-ui, sans-serif" font-weight="bold" font-size="13" fill="#8B5CF6">$200,000</text>
+      <circle cx="132" cy="78" r="10" fill="#EC4899"/>
+      <text x="132" y="81" font-family="system-ui, sans-serif" font-size="9" fill="#FFF" text-anchor="middle">MB</text>
+      <rect x="12" y="72" width="45" height="14" rx="4" fill="#EF4444" fill-opacity="0.2"/>
+      <text x="34" y="82" font-family="system-ui, sans-serif" font-size="8" font-weight="bold" fill="#EF4444" text-anchor="middle">Hot</text>
+    </g>
+  </g>
+  
+  <!-- Column 5: Closed Won -->
+  <g transform="translate(776, 110)">
+    <rect width="168" height="440" rx="10" fill="#1F2937" fill-opacity="0.3" stroke="#374151" stroke-opacity="0.5"/>
+    <text x="12" y="24" font-family="system-ui, sans-serif" font-weight="bold" font-size="13" fill="#10B981">CLOSED WON</text>
+    <rect x="106" y="12" width="20" height="16" rx="8" fill="#10B981" fill-opacity="0.2"/>
+    <text x="116" y="24" font-family="system-ui, sans-serif" font-size="10" font-weight="bold" fill="#10B981" text-anchor="middle">1</text>
+    <text x="156" y="24" font-family="system-ui, sans-serif" font-size="13" fill="#10B981" text-anchor="end">$95K</text>
+    <line x1="12" y1="36" x2="156" y2="36" stroke="#374151" stroke-opacity="0.5"/>
+    
+    <!-- Card 1 -->
+    <g transform="translate(8, 48)">
+      <rect width="152" height="100" rx="8" fill="#111827" stroke="#10B981" stroke-opacity="0.6"/>
+      <text x="12" y="22" font-family="system-ui, sans-serif" font-weight="bold" font-size="12" fill="#FFF">NVIDIA Inc</text>
+      <text x="12" y="38" font-family="system-ui, sans-serif" font-size="10" fill="#9CA3AF">GPU Cluster CRM API</text>
+      <text x="12" y="62" font-family="system-ui, sans-serif" font-weight="bold" font-size="13" fill="#10B981">$95,000</text>
+      <circle cx="132" cy="78" r="10" fill="#10B981"/>
+      <text x="132" y="81" font-family="system-ui, sans-serif" font-size="9" fill="#FFF" text-anchor="middle">JH</text>
+      <rect x="12" y="72" width="45" height="14" rx="4" fill="#10B981" fill-opacity="0.2"/>
+      <text x="34" y="82" font-family="system-ui, sans-serif" font-size="8" font-weight="bold" fill="#10B981" text-anchor="middle">Won</text>
+    </g>
+  </g>
+</svg>

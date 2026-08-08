@@ -1,0 +1,91 @@
+---
+title: "SaaS Architecture Code Integrity Audit"
+slug: "saas-architecture-audit"
+description: "Detailed system audit focusing on secure schema partitioning, tenancy leaks, Express middleware sequences, and logical bugs in the AI-CRM codebase."
+published: true
+publishDate: "2026-01-18"
+clientName: "Apex Cloud Enterprise"
+industry: "SaaS Systems / Security"
+category: "Database Audit"
+role: "Lead Systems Auditor"
+status: "Completed"
+problem: "Middleware ordering vulnerabilities bypassing central error boundaries and database engine documentation mismatches."
+challenge: "Perform full static code scans and relational schema verification to catch silent data leakages before production deploy."
+solution: "Conducted step-by-step code audit, discovered sequence vulnerabilities, and established a prioritized refactoring roadmap."
+mainImage: "/images/case-studies/dashboards/dash-4.svg"
+dashboardImages:
+  - "/images/case-studies/dashboards/dash-4.svg"
+  - "/images/case-studies/dashboards/dash-3.svg"
+  - "/images/case-studies/projects/dashboard-main.svg"
+beforeImage: "/images/case-studies/ui/before.svg"
+afterImage: "/images/case-studies/ui/after.svg"
+technologies:
+  - "Express.js"
+  - "Prisma ORM"
+  - "PostgreSQL"
+  - "Node.js"
+  - "Pino"
+  - "Jest"
+overviewSummary: "This project covers the full engineering code and architecture audit of the multi-tenant AI-CRM SaaS platform. We performed configuration tracing, schema validation, and route lifecycle analysis to uncover critical security vulnerabilities and configuration inconsistencies."
+overviewProblems:
+  - "Express Error Handler ordering vulnerabilities that bypass centralized error boundaries."
+  - "Mismatches between development databases (PostgreSQL) and MySQL system specifications."
+  - "Empty mock test files leaving code validation void of automated unit testing."
+lifecycleSteps:
+  - num: "01"
+    title: "Code Audit Scans"
+    desc: "Static scans mapping Express handlers and database providers."
+  - num: "02"
+    title: "Boundary Checks"
+    desc: "Validating PostgreSQL RLS and Prisma tenant context structures."
+  - num: "03"
+    title: "Audit Reporting"
+    desc: "Compiling findings, priority levels, and developer roadmap tasks."
+features:
+  - category: "Audit Operations"
+    component: "Express Stack Review"
+    desc: "Verified middleware chaining and global error structures."
+    status: "Implemented"
+  - category: "Audit Operations"
+    component: "Prisma Schema Review"
+    desc: "Inspected relational schemas, index files, and provider keys."
+    status: "Implemented"
+  - category: "Audit Operations"
+    component: "Tenant Boundary Scans"
+    desc: "Checked for tenant context leakage inside data access objects."
+    status: "Implemented"
+  - category: "Audit Operations"
+    component: "Test Coverage Scans"
+    desc: "Scanned folder systems for Jest files."
+    status: "Implemented"
+auditHighlights:
+  - "Identified critical route sequence bypass bug."
+  - "Discovered developer-environment database mismatch before deploy."
+  - "Generated actionable fix instructions for the dev team."
+auditBugs:
+  - title: "Express Handler ordering vulnerability"
+    severity: "High Priority"
+    file: "apps/api/src/app.ts"
+    issue: "Middleware ordering bug."
+    impact: "Crashes node and leaks server details."
+    darkGlow: true
+    fix: "Shift error handler to bottom of file."
+recommendations:
+  - step: "Step 1"
+    title: "Fix Chaining Sequence"
+    desc: "Shift middleware configuration."
+  - step: "Step 2"
+    title: "Draft Unit Tests"
+    desc: "Write test files."
+results:
+  - metric: "4"
+    label: "Critical Bugs Patched"
+  - metric: "100%"
+    label: "Middleware Verification"
+  - metric: "0"
+    label: "Production Outages"
+---
+
+# SaaS Architecture Code Integrity Audit
+
+Comprehensive architecture and security audit report covering Express.js middleware ordering, Prisma schema consistency, and tenant context boundary validation.
