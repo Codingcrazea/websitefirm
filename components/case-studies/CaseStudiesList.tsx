@@ -3,7 +3,7 @@
 import React, { useState, useMemo } from 'react';
 import Link from 'next/link';
 import { CaseStudyItem } from '@/types/content';
-import { Search, ArrowRight, Layers, ShieldCheck, Sparkles, Code2 } from 'lucide-react';
+import { Search, ArrowRight, Layers, ShieldCheck, Sparkles, Code2, ExternalLink } from 'lucide-react';
 
 interface CaseStudiesListProps {
   caseStudies: CaseStudyItem[];
@@ -160,18 +160,31 @@ export default function CaseStudiesList({ caseStudies }: CaseStudiesListProps) {
                   )}
                 </div>
 
-                {/* Footer CTA Button */}
-                <div className="pt-2 flex items-center justify-between">
+                {/* Footer CTA Buttons */}
+                <div className="pt-2 flex flex-wrap items-center justify-between gap-3">
                   <span className="text-xs text-slate-400 font-medium">
                     {study.role || 'Enterprise System Audit'}
                   </span>
-                  <Link
-                    href={`/case-studies/${study.slug}`}
-                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gold-400 hover:bg-gold-300 text-slate-950 text-xs font-bold transition-all shadow-md hover:shadow-gold-400/30 group-hover:translate-x-1"
-                  >
-                    <span>Read Deep-Dive Audit</span>
-                    <ArrowRight className="w-4 h-4" />
-                  </Link>
+                  <div className="flex items-center gap-2">
+                    {(study.projectUrl || study.liveUrl) && (
+                      <a
+                        href={study.projectUrl || study.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-surface-dark hover:bg-slate-800 text-gold-300 border border-gold-400/30 text-xs font-semibold transition-all hover:scale-105"
+                      >
+                        <ExternalLink className="w-3.5 h-3.5 text-gold-400" />
+                        <span>Visit Live Project</span>
+                      </a>
+                    )}
+                    <Link
+                      href={`/case-studies/${study.slug}`}
+                      className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gold-400 hover:bg-gold-300 text-slate-950 text-xs font-bold transition-all shadow-md hover:shadow-gold-400/30 group-hover:translate-x-1"
+                    >
+                      <span>Read Deep-Dive Audit</span>
+                      <ArrowRight className="w-4 h-4" />
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>

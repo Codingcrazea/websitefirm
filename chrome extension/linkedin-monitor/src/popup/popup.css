@@ -1,0 +1,51 @@
+/**
+ * ============================================================================
+ * File Name: popup.css
+ * Module: Popup UI styles
+ * Purpose: Provide a compact, readable layout for the extension action popup.
+ * Responsibilities: Style the UI rendered by popup/App.tsx only.
+ * Called By: popup/main.tsx.
+ * Calls: None.
+ * Receives: Popup element class names.
+ * Returns: Applied visual presentation.
+ * Dependencies: popup/App.tsx.
+ * Connected Files: popup/main.tsx → popup.css ← popup/App.tsx.
+ * Project Phase: Popup UI.
+ * Notes: Styles remain isolated from the legacy Vite starter styles.
+ * ============================================================================
+ */
+
+/* This fixed width keeps controls usable within Chrome's compact action-popup surface. */
+:root { color: #1f2937; font-family: Arial, sans-serif; }
+body { margin: 0; }
+.popup { box-sizing: border-box; padding: 16px; width: 360px; }
+h1, h2 { margin: 0 0 8px; }
+h1 { font-size: 20px; }
+h2 { font-size: 16px; }
+header > p, section > p { color: #4b5563; font-size: 13px; margin: 0; }
+section { border-top: 1px solid #e5e7eb; margin-top: 14px; padding-top: 14px; }
+label { display: block; font-size: 14px; margin: 7px 0; }
+form { display: flex; gap: 8px; }
+input[type="text"], form input { box-sizing: border-box; flex: 1; min-width: 0; padding: 7px; }
+button { cursor: pointer; padding: 6px 9px; }
+.keyword-list, .lead-list { list-style: none; margin: 8px 0 0; padding: 0; }
+.keyword-list li { align-items: center; display: flex; justify-content: space-between; }
+.keyword-list button { border: 0; color: #b91c1c; font-size: 18px; }
+.lead-list li { border-top: 1px solid #f3f4f6; padding: 8px 0; }
+.lead-list p { font-size: 13px; margin: 4px 0; }
+small { color: #2563eb; }
+.error { color: #b91c1c; font-size: 13px; }
+.setting-sub-group { display: flex; align-items: center; justify-content: space-between; font-size: 13px; margin: 4px 0 4px 20px; color: #4b5563; }
+.setting-sub-group select { padding: 4px; font-size: 13px; }
+.poll-status-container { margin: 8px 0 4px 20px; font-size: 12px; font-weight: 500; }
+.status-scanning { display: flex; align-items: center; gap: 6px; color: #059669; }
+.pulse-dot { width: 8px; height: 8px; background-color: #059669; border-radius: 50%; display: inline-block; animation: pulse 1.5s infinite ease-in-out; }
+@keyframes pulse {
+  0% { transform: scale(0.8); opacity: 0.5; }
+  50% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(0.8); opacity: 0.5; }
+}
+.status-countdown { color: #2563eb; }
+.status-idle { color: #9ca3af; }
+.setting-select-group { display: flex; align-items: center; justify-content: space-between; font-size: 13px; margin: 8px 0; color: #4b5563; }
+.setting-select-group select { padding: 4px; font-size: 13px; }

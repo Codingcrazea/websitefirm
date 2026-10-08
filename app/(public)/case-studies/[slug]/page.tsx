@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { getContentBySlug, getAllContentItems } from '@/server/content/service';
 import { generateCustomMetadata } from '@/server/seo/generator';
 import { CaseStudyItem } from '@/types/content';
-import { ArrowLeft, Sparkles, ShieldCheck, CheckCircle2, Cpu, Calendar, UserCheck, Layers, ArrowRight } from 'lucide-react';
+import { ArrowLeft, Sparkles, ShieldCheck, CheckCircle2, Cpu, Calendar, UserCheck, Layers, ArrowRight, ExternalLink } from 'lucide-react';
 
 import CaseStudyGallery from '@/components/case-studies/CaseStudyGallery';
 import BeforeAfterSlider from '@/components/case-studies/BeforeAfterSlider';
@@ -84,6 +84,20 @@ export default async function CaseStudyDetailPage({ params }: CaseStudyDetailPro
             <p className="text-slate-300 text-base sm:text-xl leading-relaxed max-w-4xl">
               {study.overviewSummary || study.description}
             </p>
+
+            {(study.projectUrl || study.liveUrl) && (
+              <div className="pt-2">
+                <a
+                  href={study.projectUrl || study.liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2.5 px-6 py-3 rounded-2xl bg-gold-400 hover:bg-gold-300 text-slate-950 font-extrabold text-sm transition-all shadow-xl shadow-gold-400/20 hover:scale-105"
+                >
+                  <ExternalLink className="w-4 h-4" />
+                  <span>Visit Live Application ({study.projectUrl || study.liveUrl})</span>
+                </a>
+              </div>
+            )}
 
             {/* Key Metadata Row */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 border-t border-slate-800">

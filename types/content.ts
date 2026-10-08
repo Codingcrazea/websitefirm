@@ -63,6 +63,8 @@ export interface CaseStudyItem extends BaseContentMeta {
   category?: string;
   role?: string;
   status?: string;
+  projectUrl?: string;
+  liveUrl?: string;
   problem: string;
   challenge: string;
   solution: string;
